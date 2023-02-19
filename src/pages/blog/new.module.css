@@ -1,0 +1,50 @@
+.label {
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+}
+.input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: .25rem 0 1rem 0;
+    padding: .5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 6px;
+    border: 1px solid #0f0f0f;
+}
+.inputFocus {
+    border-color: rebeccapurple;
+}
+.form {
+    border: 1px solid black;
+    width: 960px;
+    margin: 6rem auto;
+    padding: 3rem;
+}
+
+.titleLabel {
+    composes: label;
+}
+.titleInput {
+    composes: input;
+}
+.titleInput:focus-within {
+    border-color: rgb(0 0 200 / 50%);
+    box-shadow: 0 0 4px 4px rgb(0 0 255 / 20%);
+    outline: none;
+}
+.summaryLabel {
+    composes: label;
+}
+.summaryInput {
+    composes: input;
+}
+.contentLabel {
+    composes: label;
+}
+.contentTextarea {
+    composes: input;
+    resize: vertical;
+}
