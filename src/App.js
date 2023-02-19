@@ -1,15 +1,26 @@
 import './App.css';
 import {Component, Fragment} from "react";
 import PageIndex from "./pages";
+import PagePost from "./pages/blog/post";
+import PageNewPost from "./pages/blog/new";
+import PageNotFound from "./pages/NotFound";
 
 export default class App extends Component {
     constructor(props) {
         super(props);
-        this.notFound = <div>404 Not Found</div>
+        this.notFound = <PageNotFound/>
         this.routers = [
             {
                 path: "^/$",
                 element: <PageIndex/>
+            },
+            {
+                path: "^/blog/[0-9]+$",
+                element: <PagePost/>
+            },
+            {
+                path: "^(/blog/new)$",
+                element: <PageNewPost/>
             }
         ]
         this.matchRouter = this.matchRouter.bind(this);
@@ -22,7 +33,7 @@ export default class App extends Component {
                 return router.element;
             }
         }
-        return this.NotFound;
+        return this.notFound;
     }
 
     render() {
