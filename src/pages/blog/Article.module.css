@@ -1,0 +1,72 @@
+.article {
+    display: block;
+    width: 48%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 3rem;
+}
+
+.header {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    color: grey;
+    font-family: Poppins, "Open sans", system-ui;
+}
+
+.authorContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: grey;
+    column-gap: .75rem;
+    text-decoration: none;
+}
+
+.authorContainer:hover {
+    color: var(--primary-color);
+}
+
+.authorImage {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border: 2px solid gainsboro;
+    border-radius: 50%;
+}
+
+.body {
+    padding: 0 1.5rem;
+}
+
+.cover {
+    width: 100%;
+    object-fit: cover;
+}
+
+.title {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    transition: color .3s ease;
+}
+
+.title:hover {
+    color: var(--primary-color);
+}
+
+.summary {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.footer {
+    margin-top: 2rem;
+    background: url("https://www.onepagecrm.com/wp-content/themes/onepagecrm/img/post-footer-bg.svg") no-repeat 0;
+    height: 5rem;
+    width: 100%;
+}

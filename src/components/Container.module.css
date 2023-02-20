@@ -1,0 +1,5 @@
+.container {
+    width: var(--main--container-width);
+    margin: 0 auto;
+}
+

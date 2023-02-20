@@ -4,6 +4,7 @@ import PageIndex from "./pages";
 import PagePost from "./pages/blog/post";
 import PageNewPost from "./pages/blog/new";
 import PageNotFound from "./pages/NotFound";
+import PageBlogIndex from "./pages/blog";
 
 export default class App extends Component {
     constructor(props) {
@@ -13,6 +14,10 @@ export default class App extends Component {
             {
                 path: "^/$",
                 element: <PageIndex/>
+            },
+            {
+                path:"^(/blog)$",
+                element: <PageBlogIndex/>
             },
             {
                 path: "^/blog/[0-9]+$",

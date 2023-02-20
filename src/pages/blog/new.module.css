@@ -19,9 +19,8 @@
 }
 .form {
     border: 1px solid black;
-    width: 960px;
-    margin: 6rem auto;
     padding: 3rem;
+    margin: 6rem auto;
 }
 
 .titleLabel {
@@ -40,6 +39,7 @@
 }
 .summaryInput {
     composes: input;
+    resize: horizontal;
 }
 .contentLabel {
     composes: label;
@@ -61,4 +61,14 @@
 .submitButton:hover {
     cursor: pointer;
     background-color: rgb(50 50 235 / 60%);
+}
+.submitButton[disabled=true] {
+
+}
+
+button[disabled] {
+    background-color: rgb(255 0 0 / 30%);
+}
+button[disabled]:hover {
+    cursor: not-allowed;
 }

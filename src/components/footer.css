@@ -1,0 +1,73 @@
+footer {
+    background-color: var(--dark-black);
+}
+
+footer .container {
+    padding: 0 4rem;
+}
+
+.footer-menu-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 3rem 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.footer-menu-container-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+}
+
+.footer-menu-container-item-title {
+    margin-top: 0;
+    margin-bottom: .5em;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer-menu-container-item-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color .3s ease-in-out;
+    font-weight: 500;
+}
+.footer-menu-container-item-link:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.footer-social-container {
+    display: flex;
+    justify-content: right;
+    padding: 2rem 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.footer-social-menu {
+    display: flex;
+    /*gap: 1rem;*/
+    column-gap: 1rem;
+}
+
+.footer-social-menu-link {
+    color: white;
+    transition: color .2s ease-in-out;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.footer-social-menu-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-copyright-container {
+    color: white;
+    font-size: 14px;
+    padding: 1rem 0;
+}
